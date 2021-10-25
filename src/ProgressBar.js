@@ -5,7 +5,7 @@ const ProgressBar = (props) => {
 
   const containerStyles = {
     height: 20,
-    width: '300px',
+    width: '800px',
     backgroundColor: "#e0e0de",
     borderRadius: 50,
     margin: 50
@@ -24,12 +24,17 @@ const ProgressBar = (props) => {
     fontWeight: 'bold'
   }
 
+  const infoStyles = {
+    padding: 10
+  }
+
   return (
     <div style={containerStyles}>
       <div style={fillerStyles}>
-        <span style={labelStyles}>{`${completed/10} second`}</span>
+        <span style={labelStyles}>{`${completed/10} s`}</span>
       </div>
-        <div> Noticed the progress is paused around 3 seconds</div>
+        <div style={infoStyles}> With Guru extension turned off, the progress bar should be completed in 10 second</div>
+        <div style={infoStyles}> With Guru extension enabled, noticed the progress bar is freezed after 3 seconds</div>
     </div>
   );
 };
