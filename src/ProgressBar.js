@@ -34,7 +34,7 @@ const ProgressBar = (props) => {
         <span style={labelStyles}>{`${completed/10} s`}</span>
       </div>
         <div style={infoStyles}> With Guru extension turned off, the progress bar should be completed in 10 second</div>
-        <div style={infoStyles}> With Guru extension enabled, noticed the progress bar is freezed after 3 seconds</div>
+        <div style={infoStyles}> With Guru extension enabled, noticed the progress bar is freezed for couple seconds after around 3 seconds</div>
     </div>
   );
 };
